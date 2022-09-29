@@ -1,6 +1,7 @@
 const country = "Wales";
 const continent = "Europe";
 let population = 3136183;
+const thirtyThreeMillion = 3300000;
 
 const isIsland = false;
 const language = "English";
@@ -9,9 +10,11 @@ console.log(
   `Hello, I am from ${country}, which is in ${continent}, it has a population of ${population}.`
 );
 
-console.log(`isIsland is ${isIsland}, and language is ${language}.`);
-
-const populationDividedByTwo = population / 2;
-console.log(
-  `Population of ${country} divided by 2 is ${populationDividedByTwo}`
-);
+if (population >= thirtyThreeMillion) {
+  console.log(`The population of ${country} is above average!`);
+} else {
+  const amountBelowAverage = thirtyThreeMillion - population;
+  console.log(
+    `${country}'s population is ${amountBelowAverage} below the average.`
+  );
+}
