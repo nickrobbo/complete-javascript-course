@@ -14,6 +14,8 @@ console.log("Hello World from script.js!");
 //   console.log(`Come back in ${yearsLeft} years for a beer!`);
 // }
 
+//////////////////////////////////////////////////////////////////////////////////////////
+
 // type conversion
 // let input = "1989";
 // input = Number(input);
@@ -23,14 +25,21 @@ console.log("Hello World from script.js!");
 // type coercion
 // console.log("4" + "6" - 7);
 
-// == loose equality operator (does coercion)
-const age = 18;
-if (age == "18") {
-  console.log("They are equal");
-}
+//////////////////////////////////////////////////////////////////////////////////////////
 
-// === strict equality operator (doesn't do coercion)
-const anotherAge = 18;
-if (anotherAge === "18") {
-  console.log("They are equal");
-}
+// == loose equality operator (does coercion)
+// const age = 18;
+// if (age == "18") {
+//   console.log("They are equal");
+// }
+
+// // === strict equality operator (doesn't do coercion)
+// const anotherAge = 18;
+// if (anotherAge === "18") {
+//   console.log("They are equal");
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+// const input = prompt("What football team do you support?");
+// console.log(input);
