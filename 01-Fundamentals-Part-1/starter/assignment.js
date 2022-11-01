@@ -26,7 +26,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////
 
 // LECTURE: Equality Operators: == vs. ===
-// LECTURE: Logical Operators
 // const numNeighbours = Number(
 //   prompt("How many neighbour countries does your country have?")
 // );
@@ -44,3 +43,13 @@
 // }
 
 //////////////////////////////////////////////////////////////////////////////////////////
+
+// LECTURE: Logical Operators
+// const country = "Wales";
+// let population = 3136183;
+// const isIsland = false;
+// const language = "English";
+
+// if (language === "English" && population < 5000000 && !isIsland) {
+//   console.log(`${country} is a good match for you!`);
+// }

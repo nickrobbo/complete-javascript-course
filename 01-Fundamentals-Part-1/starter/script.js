@@ -43,3 +43,12 @@ console.log("Hello World from script.js!");
 
 // const input = prompt("What football team do you support?");
 // console.log(input);
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+const hasGoodVision = true;
+const hasLicense = true;
+
+if (hasGoodVision && hasLicense) {
+  console.log(`Good news, you can drive!`);
+}
