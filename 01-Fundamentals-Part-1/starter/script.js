@@ -46,9 +46,35 @@ console.log("Hello World from script.js!");
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
-const hasGoodVision = true;
-const hasLicense = true;
+// const hasGoodVision = true;
+// const hasLicense = true;
 
-if (hasGoodVision && hasLicense) {
-  console.log(`Good news, you can drive!`);
-}
+// if (hasGoodVision && hasLicense) {
+//   console.log(`Good news, you can drive!`);
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+// const day = "Saturday";
+
+// switch (day) {
+//   case `Monday`:
+//     console.log(`It's Monday, let's smash this week!`);
+//     break;
+//   case `Tuesday`:
+//     console.log(`It's Tuesday, keep it going!`);
+//     break;
+//   case `Wednesday`:
+//     console.log(`It's Wednesday, happy hump day!`);
+//     break;
+//   case `Thursday`:
+//     console.log(`It's Thursday, nearly there!`);
+//     break;
+//   case `Friday`:
+//     console.log(`It's Friday, enjoy a chilled day!`);
+//     break;
+//   default:
+//     console.log(`Unsupported day, sorry!`);
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////

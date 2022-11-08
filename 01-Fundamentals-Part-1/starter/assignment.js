@@ -53,3 +53,33 @@
 // if (language === "English" && population < 5000000 && !isIsland) {
 //   console.log(`${country} is a good match for you!`);
 // }
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+// LECTURE: Switch Statement
+// const language = prompt("What is your language?");
+
+// switch (language) {
+//   case `Welsh`:
+//     console.log(`Not a popular language`);
+//     break;
+//   case `English`:
+//     console.log(`Very popular language`);
+//     break;
+//   default:
+//     console.log(`I'm not sure about that one!`);
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+// LECTURE: Conditional (Ternary) Operator
+
+// result = what you want to evaluate ? if it is true : otherwise;
+// const population = 33000001;
+// const populationAverage = 33000000;
+
+// aboverOrBelow = population >= populationAverage ? `above` : "below";
+
+// console.log(`The population is ${aboverOrBelow} average!`);
+
+//////////////////////////////////////////////////////////////////////////////////////////
