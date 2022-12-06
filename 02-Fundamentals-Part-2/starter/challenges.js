@@ -1,34 +1,26 @@
 // --------------------- CODING CHALLENGE 01 ---------------------
 
-// Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
-// Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
-// Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+// Test data:
+//  - Data 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49
+//  - Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
 
-const dolphinsAverageScore = (50 + 50 + 70) / 3;
-const koalasAverageScore = (60 + 80 + 90) / 3;
-const minAverageScore = 100;
+const calcAvergage = (score1, score2, score3) => {
+  return (score1 + score2 + score3) / 3;
+};
 
-console.log(
-  `Dolphins Avg = ${dolphinsAverageScore}`,
-  `Koalas Avg = ${koalasAverageScore}`
-);
-
-if (
-  dolphinsAverageScore === koalasAverageScore &&
-  dolphinsAverageScore >= minAverageScore &&
-  koalasAverageScore >= minAverageScore
-) {
-  console.log(`It was a draw!`);
-} else if (
-  dolphinsAverageScore > koalasAverageScore &&
-  dolphinsAverageScore >= minAverageScore
-) {
-  console.log(`Dolphins win!`);
-} else if (
-  koalasAverageScore > dolphinsAverageScore &&
-  koalasAverageScore >= minAverageScore
-) {
-  console.log(`Koalas win!`);
-} else {
-  console.log(`No winner!`);
+function checkWinner(avgDolphins, avgKoalas) {
+  if (avgDolphins > avgKoalas && avgDolphins >= 2 * avgKoalas) {
+    console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+  } else if (avgKoalas > avgDolphins && avgKoalas >= 2 * avgDolphins) {
+    console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+  } else {
+    console.log(`No winner this time`);
+  }
 }
+
+const dolphinsAverageScore = calcAvergage(44, 23, 71);
+console.log(`Dolphins average score: ${dolphinsAverageScore}`);
+const koalasAverageScore = calcAvergage(65, 54, 49);
+console.log(`Koalas average score: ${koalasAverageScore}`);
+
+checkWinner(dolphinsAverageScore, koalasAverageScore);
